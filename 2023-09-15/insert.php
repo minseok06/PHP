@@ -7,16 +7,14 @@
     $regist_day = date("Y-m-d (H:i)");  // UTC 현재 '년-월-일 (시:분)'
               
     $con = mysqli_connect("localhost", "root", "", "sample");  // DB 접속
-
-	$sql = "insert into members (id, pass, name, email, regist_day, level, point) ";    // 데이터 삽입 명령
-	$sql .= "values('$id', '$pass', '$name', '$email', '$regist_day', 9, 0)";       
+	$sql = "insert into members (id, pass, name, email, regist_day, level, point) ";
+	$sql .= "values('$id', '$pass', '$name', '$email', '$regist_day', 9, 0)";
 
 	mysqli_query($con, $sql);       // SQL 명령 실행
     mysqli_close($con);     
 
     // 로그인 폼으로 이동
-    echo "회원가입 완료";
-    // echo "<script>
-	//         //   location.href = 'login_form.php';
-	//       </script>";
+    echo "<script>
+	    location.href = 'login_form.php';
+	    </script>";
 ?>
