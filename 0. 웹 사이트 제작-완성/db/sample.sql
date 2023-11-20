@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- 생성 시간: 23-11-17 02:20
+-- 생성 시간: 23-11-20 03:22
 -- 서버 버전: 10.4.27-MariaDB
 -- PHP 버전: 8.2.0
 
@@ -71,7 +71,8 @@ CREATE TABLE `_notice` (
 INSERT INTO `_notice` (`num`, `id`, `name`, `subject`, `content`, `is_html`, `regist_day`, `file_name`, `file_type`, `file_copied`) VALUES
 (1, 'a', 'a', 'ê°€ì—°ì•„ ìƒì¼ ì¶•í•˜í•´ 1120', 'ë§›ìžˆëŠ”ê±° ë§Žì´ ë¨¹ê³  í–‰ë³µí•œ í•˜ë£¨ ë³´ëƒˆìœ¼ë©´ ì¢‹ê² ë‹¤', '', '2023-11-17 (01:50)', '', '', ''),
 (2, 'a', 'a', 'ë¯¼ì„ì•„ ë„ˆëŠ” í•  ìˆ˜ ìžˆì–´', 'í¬ê¸°í•˜ì§€ë§ˆ ëª¨í‰ì´ë§Œ ëŒë©´ í¬ë§ì´ ê¸°ë‹¤ë ¤', '', '2023-11-17 (01:41)', 'í¬ë§ì´ë‹¤.txt', 'text/plain', '2023_11_17_01_41_08.txt'),
-(3, 'a', 'a', 'ë‚˜ë„ ì–¸ì  ê°„ ì´ë£° ê±°ì•¼', 'ê·¸ë•Œê¹Œì§€ í¬ê¸°í•˜ì§€ë§ê³  ì—´ì‹¬ížˆ ì‚´ìž', '', '2023-11-17 (01:47)', '', '', '');
+(3, 'a', 'a', 'ë‚˜ë„ ì–¸ì  ê°„ ì´ë£° ê±°ì•¼', 'ê·¸ë•Œê¹Œì§€ í¬ê¸°í•˜ì§€ë§ê³  ì—´ì‹¬ížˆ ì‚´ìž', '', '2023-11-17 (01:47)', '', '', ''),
+(4, 'a', 'a', 'ì˜¤ëŠ˜ì€ ê°€ì—°ì´ ìƒì¼', 'ê°€ì—°ì•„ ìƒì¼ ì¶•í•˜í•´', '', '2023-11-20 (03:16)', 'ìƒì¼ ì¶•í•˜í•´.png', 'image/png', '2023_11_20_03_16_08.png');
 
 -- --------------------------------------------------------
 
@@ -99,7 +100,8 @@ CREATE TABLE `_qna` (
 INSERT INTO `_qna` (`num`, `id`, `name`, `subject`, `content`, `is_html`, `regist_day`, `file_name`, `file_type`, `file_copied`) VALUES
 (1, 'a', 'a', 'ë„ë¼ì—ëª½ì´ ë‚  ì§€ì¼œì¤¬ìœ¼ë‹ˆê¹Œ ì´ì œëŠ” ë‚´ê°€ ì§€ì¼œì¤˜ì•¼í•´', 'ë„ë¼ì—ëª½ ê³ ë§ˆì›Œ', '', '2023-11-17 (02:13)', '', '', ''),
 (2, 'a', 'a', 'ë„ˆì˜ ë³´ì„ì„ ì°¾ì•„ì„œ ë°˜ì§í•˜ê²Œ ë¹›ë‚´ì¤˜', 'ë„ˆëŠ” í•  ìˆ˜ ìžˆì–´', '', '2023-11-17 (02:14)', '', '', ''),
-(3, 'a', 'a', 'ìž‘ì€ ì¼ìƒì˜ ê²½í—˜ì—ì„œ ì–»ëŠ” í–‰ë³µì˜ ê°€ì¹˜', 'ìŠ¤íƒ€í•„ë“œ ì‹œí‹°', '', '2023-11-17 (02:16)', '', '', '');
+(3, 'a', 'a', 'ìž‘ì€ ì¼ìƒì˜ ê²½í—˜ì—ì„œ ì–»ëŠ” í–‰ë³µì˜ ê°€ì¹˜', 'ìŠ¤íƒ€í•„ë“œ ì‹œí‹°', '', '2023-11-17 (02:16)', '', '', ''),
+(4, 'a', 'a', 'í‰ìƒ ê¸°ì–µì— ë‚¨ì„ ì œì£¼ë„ ìˆ˜í•™ì—¬í–‰', 'ë„ˆë¬´ ìž¬ë¯¸ìžˆì—ˆë‹¤', '', '2023-11-20 (03:17)', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -123,7 +125,8 @@ CREATE TABLE `_qna_ripple` (
 INSERT INTO `_qna_ripple` (`num`, `parent`, `id`, `name`, `content`, `regist_day`) VALUES
 (3, 3, 'a', 'a', 'ì´ì•¼ ë©‹ì§€ë‹¤\r\n', '2023-11-17 (02:18)'),
 (4, 2, 'a', 'a', 'ê·¸ëž˜ ë‚˜ëŠ” í•  ìˆ˜ ìžˆì–´', '2023-11-17 (02:18)'),
-(5, 1, 'a', 'a', 'ì§„êµ¬ëŠ” ì°¸ ëŒ€ë‹¨í•´', '2023-11-17 (02:19)');
+(5, 1, 'a', 'a', 'ì§„êµ¬ëŠ” ì°¸ ëŒ€ë‹¨í•´', '2023-11-17 (02:19)'),
+(6, 4, 'a', 'a', 'ìž¬ë¯¸ìžˆëŠ” ë§Œí¼ ê°€ì¡±ì´ëž‘ë„ ê°€ê³  ì—¬ìžì¹œêµ¬ëž‘ë„ ê°€ê³  ì¹œêµ¬ë“¤ê³¼ë„ ë˜ ê°€ê³  íšŒì‚¬ì—ì„œë„ ê°€ê³  ê·¸ëž˜ì•¼ê² ë‹¤\r\n', '2023-11-20 (03:18)');
 
 -- --------------------------------------------------------
 
@@ -143,6 +146,13 @@ CREATE TABLE `_youtube` (
   `file_type` char(40) DEFAULT NULL,
   `file_copied` char(40) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- 테이블의 덤프 데이터 `_youtube`
+--
+
+INSERT INTO `_youtube` (`num`, `id`, `name`, `subject`, `content`, `is_html`, `regist_day`, `file_name`, `file_type`, `file_copied`) VALUES
+(1, 'a', 'a', 'ì œì£¼ë„ ìˆ˜í•™ì—¬í–‰', '&lt;iframe width=&quot;424&quot; height=&quot;238&quot; src=&quot;https://www.youtube.com/embed/a6gNsFYDhZQ&quot; title=&quot;ì§§ì§€ë§Œ ê¸¸ì—ˆë˜ ì œì£¼ë„ 1ì¼ì°¨&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;/iframe&gt;', '', '2023-11-20 (03:09)', 'ì¸ë„¤ì¼.png', 'image/png', '2023_11_20_03_09_43.png');
 
 --
 -- 덤프된 테이블의 인덱스
@@ -192,25 +202,25 @@ ALTER TABLE `_mem`
 -- 테이블의 AUTO_INCREMENT `_notice`
 --
 ALTER TABLE `_notice`
-  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- 테이블의 AUTO_INCREMENT `_qna`
 --
 ALTER TABLE `_qna`
-  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- 테이블의 AUTO_INCREMENT `_qna_ripple`
 --
 ALTER TABLE `_qna_ripple`
-  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- 테이블의 AUTO_INCREMENT `_youtube`
 --
 ALTER TABLE `_youtube`
-  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
