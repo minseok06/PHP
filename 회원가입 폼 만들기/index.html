@@ -13,14 +13,14 @@
 
     <div class="container mt-3">
         <h2>회원가입을 환영합니다!</h2>
-        <form action="/action_page.php">
+        <form action="./output.php" method="post">
             <div class="mb-3 mt-3">
                 <label for="uid">아이디:</label>
                 <input type="text" class="form-control" id="uid" placeholder="Enter 아이디" name="uid">
             </div>
             <div class="mb-3">
-                <label for="pwd">비밀번호:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter 비밀번호" name="pwd">
+                <label for="upwd">비밀번호:</label>
+                <input type="password" class="form-control" id="upwd" placeholder="Enter 비밀번호" name="upwd">
             </div>
             <div class="mb-3 mt-3">
                 <label for="uyear" class="form-label">졸업년도 (select one):</label>
@@ -42,8 +42,8 @@
                 <input type="text" class="form-control" id="utel" placeholder="Enter 폰번호" name="utel">
             </div>
             <div class="mb-3">
-                <label for="email">이메일:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter 이메일" name="email">
+                <label for="uemail">이메일:</label>
+                <input type="email" class="form-control" id="uemail" placeholder="Enter 이메일" name="uemail">
             </div>
             <div class="mb-3">
                 <label for="uaddr">집주소:</label>
